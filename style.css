@@ -18,6 +18,7 @@
   display: flex;
   background-color: #f2f2f2;
   overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .logo {
@@ -88,28 +89,69 @@
 
 .photopics {
   display: flex;
-}
-
-.divider__image {
-  background-image: url(../images/actualFlower.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding-top: 100px;
+  max-width: 1580;
 }
 
 .card {
   height: 900px;
-  width: fit-content;
-  box-shadow: aqua;
-  border: 2px solid burlywood;
-  border-radius: 5%;
-  display: flex;
+  display: block;
+  max-width: fit-content;
   flex-direction: column;
   text-align: center;
+  justify-self: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: burlywood;
+  border-image: initial;
+  border-radius: 5%;
+}
+
+.card_size_m {
+  max-width: fit-content;
+}
+
+.card__text {
+  font-size: 18px;
+  color: rgb(90, 25, 151);
+  font-weight: bold;
+  line-height: 25px;
 }
 
 .card__image {
   height: 390px;
+  align-self: center;
   border-radius: 5%;
+}
+
+.middle-card {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  background-color: rgb(165, 72, 194);
+  flex-direction: column;
+  text-align: center;
+  top: 1559px;
+  border-radius: 5%;
+  margin: auto 559px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
+  border-image: initial;
+}
+
+.middle-card__image {
+  max-width: fit-content;
+  width: 300px;
+  height: 300px;
+}
+
+.middle-card__text {
+  font-size: 18px;
+  color: rgb(90, 25, 151);
+  font-weight: bold;
+  line-height: 25px;
+  flex-wrap: wrap;
 }
 
 .card__image_size_large {
