@@ -4,6 +4,31 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
+
+    <script>
+
+      // Fuction to say hello
+      // function hello() {
+      //     alert('Hello!');
+      // }
+        //  Function to change heding to say goodby
+
+        // function hello() {
+        //     document.querySelector('h1').innerHTML = 'Goodbye!';
+        // }
+
+          let counter = 0;
+
+          function count() {
+            counter++;
+            document.querySelector('#counter').innerHTML = counter;
+          }
+
+
+
+
+    </script>
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <meta name="author" content="Taylor Bell">
@@ -23,6 +48,9 @@
     <script src="" async defer></script>
     
       <header class="header">
+      <h1 id="counter">0</h1>
+      <button onclick="count()">Click Here!</button>
+
         <div class="logo">
         <a href="https://practicum.yandex.com/" class="logo logo_place_header"></a>
         </div>
