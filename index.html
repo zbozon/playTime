@@ -17,11 +17,19 @@
         //     document.querySelector('h1').innerHTML = 'Goodbye!';
         // }
 
+          document.addEventListener('DOMContentLoaded', function() {
+              document.quesrySelector('button').onclick = count;
+          });
+
           let counter = 0;
 
           function count() {
             counter++;
             document.querySelector('#counter').innerHTML = counter;
+
+            if (counter % 10 === 0) {
+                alert(`Counter is at ${counter}!`);
+            }
           }
 
 
@@ -49,7 +57,7 @@
     
       <header class="header">
       <h1 id="counter">0</h1>
-      <button onclick="count()">Click Here!</button>
+      <button>Click Here!</button>
 
         <div class="logo">
         <a href="https://practicum.yandex.com/" class="logo logo_place_header"></a>
