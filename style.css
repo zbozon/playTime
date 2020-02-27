@@ -1,0 +1,168 @@
+.page {
+  min-width: 1100px;
+  /* we don't know how to make mobile versions of websites yet, */
+  /* so here we've set a minimum page width */
+  max-width: 1600px;
+  /* here we've set a maximum page width */
+  margin: 0 auto;
+  /* this ensures that all content is centered on screens wider than 1600px */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* parameters for the header section */
+  position: relative;
+  display: flex;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.logo {
+  background-size: contain;
+  height: 31px;
+  width: 154px;
+  background-repeat: no-repeat;
+  border-radius: 100%;;
+}
+
+.logo_place_header {
+  background-image: url(/Users/boto/Desktop/myProjects/playTime/images/logo.png);
+  position: absolute;
+  left: 64px;
+  top: 30px;
+}
+
+.header__title {
+  align-self: center;
+  line-height: 96px;
+  width: 730px;
+  margin-left: -20;
+  font-weight: bold;
+  font-size: 102px;
+  margin-top: -100px;
+  z-index: 3;
+}
+
+.header__subtitle {
+  position: absolute;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+}
+
+.header__link {
+  color: blue;
+  text-decoration: none;
+}
+
+.header__link:visited {
+  color: pink;
+}
+
+.header__main-illustration {
+  position: absolute;
+  width: 664px;
+  height: 508px;
+  right: 64px;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 100%
+}
+
+.header__square-pic {
+  position: absolute;
+  /* width: 568px; */
+  width: 508px;
+  height: 664px;
+  background-color: #2f80ed;
+  top: 64px;
+  right: 0px;
+  border-radius: 100%
+}
+
+.photopics {
+  display: flex;
+  padding-top: 100px;
+  max-width: 1580;
+}
+
+.card {
+  height: 900px;
+  display: block;
+  max-width: fit-content;
+  flex-direction: column;
+  text-align: center;
+  justify-self: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: burlywood;
+  border-image: initial;
+  border-radius: 5%;
+}
+
+.card_size_m {
+  max-width: fit-content;
+}
+
+.card__text {
+  font-size: 18px;
+  color: rgb(90, 25, 151);
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.card__image {
+  height: 390px;
+  align-self: center;
+  border-radius: 5%;
+}
+
+.middle-card {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  background-color: rgb(165, 72, 194);
+  flex-direction: column;
+  text-align: center;
+  top: 1559px;
+  border-radius: 5%;
+  margin: auto 559px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
+  border-image: initial;
+}
+
+.middle-card__image {
+  max-width: fit-content;
+  width: 300px;
+  height: 300px;
+}
+
+.middle-card__text {
+  font-size: 18px;
+  color: rgb(90, 25, 151);
+  font-weight: bold;
+  line-height: 25px;
+  flex-wrap: wrap;
+}
+
+.card__image_size_large {
+  height: 290px;
+  border-radius: 5%;
+}
+
+.card__text {
+  font-size: 18px;
+  color: blueviolet:
+  font-weight: bold;
+  line-height: 25px;
+
+}
