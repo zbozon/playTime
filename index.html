@@ -1,11 +1,22 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device width, initial-scale=1.">
+  <meta http-equiz="X-UA-Compatible" content="ie=edge">
+  <title>cars,nature,buildings</title>
+  <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
+  <link rel="stylesheet" href="style.css">
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+<!-- [if gt IE 8]>> <html class="no-js"> <!--<![endif]-->
+  
+<link rel="stylesheet" href="style.css">
 
-    <script>
+
+    <!-- <script>
 
       // Fuction to say hello
       // function hello() {
@@ -49,14 +60,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A practice website built for fun">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+
 
   </head>
-  <body>
-    <div class="page">
+  <!-- <body> -->
+    <!--<div class="page">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <![endif]
     
     <script src="" async defer></script>
     
@@ -148,6 +161,40 @@
          </section>
 
       </main>
-    </div>
-  </body>
+    </div> -->
+
+
+  <!-- </body> -->
+
+  <body class="root">
+    <main class="content">
+      <form action="/" class="gallery-form">
+        <label class="radio">
+          <input type="radio" name="radio-button" class="radio__box" checked value="auto">
+          <span class="radio__span"></span>
+          <span class="radio__text">
+            Automobiles
+          </span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio-button" class="radio__box" value="nature">
+          <span class="radio__span"></span>
+          <span class="radio__text">
+            Nature
+          </span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio-button" class="radio__box" value="architecture">
+          <span class="radio__span"> </span>
+          <span class="radio__text">
+            Architecture
+          </span>
+        </label>
+      </form>
+      <section class="gallery">
+    
+      </section>
+    </main>
+    <script src="script.js"></script>
+    </body>
 </html>
